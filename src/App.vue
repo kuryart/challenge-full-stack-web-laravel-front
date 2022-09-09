@@ -1,23 +1,27 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld/>
+      <navbar-top></navbar-top>
+      <router-view></router-view>
+      <navbar-side></navbar-side>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavbarTop from "./components/NavbarTop.vue";
+import NavbarSide from "./components/NavbarSide.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
-  },
+    NavbarTop,
+    NavbarSide,
+  },  
 
   data: () => ({
     //
   }),
-}
+};
 </script>
